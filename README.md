@@ -1,6 +1,13 @@
 # Black Toe Stock Checker
 
-A script to check the stock of Black Toe Running products.
+Checks the stock of Black Toe Running products, using
+
+- `Puppeteer` (to scrape the website)
+- `Twilio` (to send myself text messages)
+- `Node.js` (to run the script)
+- `PM2` (to manage the script)
+- `node-cron` (to run the script at 8am, noon, and 8pm EST every day)
+- a `.json` file of products to check
 
 ## Setup (on AWS EC2)
 
