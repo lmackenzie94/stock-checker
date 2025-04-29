@@ -29,4 +29,5 @@ A script to check the stock of Black Toe Running products.
 - `ssh -i "aws-ec2-lukes-macbook.pem" [instance Public DNS]`
 - `cd stock-checker`
 - `git pull`
+- uncomment the `executablePath` line in `index.mjs`
 - `pm2 restart stock-checker`
