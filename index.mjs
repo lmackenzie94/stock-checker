@@ -18,7 +18,7 @@ async function checkProduct(product) {
   const { name, url, size } = product;
 
   const browser = await puppeteer.launch({
-    // executablePath: '/usr/bin/chromium-browser', <-- when running on EC2
+    executablePath: '/usr/bin/chromium-browser', // remove when running locally
     headless: 'new',
     args: ['--no-sandbox', '--disable-setuid-sandbox']
   });
