@@ -6,7 +6,7 @@ Checks the stock of Black Toe Running products, using
 - `Twilio` (to send myself text messages)
 - `Node.js` (to run the script)
 - `PM2` (to manage the script)
-- `node-cron` (to run the script at 8am, noon, and 8pm EST every day)
+- `node-cron` (to run the script at 10am and 6pm EST every day)
 - a `.json` file of products to check
 
 ## Setup (on AWS EC2)

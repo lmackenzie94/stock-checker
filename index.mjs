@@ -59,9 +59,9 @@ async function sendSMSNotification(summary) {
   }
 }
 
-// Run check at 8am, noon, and 8pm EST
+// Run check at 10am and 6pm EST
 cron.schedule(
-  '0 8,12,20 * * *',
+  '0 10,18 * * *',
   () => {
     console.log(`⏰ Running check at ${new Date().toLocaleString()}`);
     checkStock();
