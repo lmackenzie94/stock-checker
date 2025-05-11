@@ -20,7 +20,8 @@ async function checkProduct(product) {
   const browser = await puppeteer.launch({
     executablePath: '/usr/bin/chromium-browser', // remove when running locally
     headless: 'new',
-    args: ['--no-sandbox', '--disable-setuid-sandbox']
+    args: ['--no-sandbox', '--disable-setuid-sandbox'],
+    userDataDir: '/dev/null'
   });
  
   const page = await browser.newPage();
